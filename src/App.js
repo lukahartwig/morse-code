@@ -81,7 +81,7 @@ class App extends Component {
                 value={this.state.inputText}
                 onChange={this.handleInputChanged}
             />
-            <TextOutput className="output">
+            <TextOutput>
                 {this.state.outputText}
             </TextOutput>
             <Footer>
