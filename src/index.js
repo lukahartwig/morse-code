@@ -1,5 +1,6 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
+import ReactGA from 'react-ga';
 import { injectGlobal } from 'styled-components';
 import App from './App';
 import registerServiceWorker from './registerServiceWorker';
@@ -20,6 +21,8 @@ injectGlobal`
       height: 100%;
   }
 `;
+
+ReactGA.initialize('UA-108403183-1');
 
 ReactDOM.render(<App/>, document.getElementById('root'));
 registerServiceWorker();
